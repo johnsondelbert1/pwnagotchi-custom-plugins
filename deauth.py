@@ -30,7 +30,7 @@ class Deauth(plugins.Plugin):
                                               position=(ui.width() / 2 - 125, 95),
                                               label_font=fonts.Bold, text_font=fonts.Small))
         ui.add_element('hand', LabeledValue(color=BLACK, label='Handshakes ', value=str(self.handshake_counter),
-                                            position=(ui.width() / 2 - 85, 95),
+                                            position=(ui.width() / 2 - 85, 75),
                                             label_font=fonts.Bold, text_font=fonts.Small))
 
     # called when the ui is updated
