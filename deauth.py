@@ -8,7 +8,7 @@ from pwnagotchi.ui.view import BLACK
 
 class Deauth(plugins.Plugin):
     __author__ = 'scorp'
-    __version__ = '2.0.0plus'
+    __version__ = '2.0.0plusv2'
     __name__ = 'deauthcounter'
     __license__ = 'MIT'
     __description__ = 'counts the successful deauth attacks of this session '
@@ -27,7 +27,7 @@ class Deauth(plugins.Plugin):
     def on_ui_setup(self, ui):
         # add custom UI elements
         ui.add_element('deauth', LabeledValue(color=BLACK, label='Deauths ', value=str(self.deauth_counter),
-                                              position=(0, 153),
+                                              position=(ui.width() + 50, ui.height() - 25),
                                               label_font=fonts.Bold, text_font=fonts.Small))
         ui.add_element('hand', LabeledValue(color=BLACK, label='Handshakes ', value=str(self.handshake_counter),
                                             position=(ui.width() / 2 + 50, ui.height() - 35),
