@@ -8,7 +8,7 @@ from pwnagotchi.ui.view import BLACK
 
 class Deauth(plugins.Plugin):
     __author__ = 'scorp'
-    __version__ = '2.0.0hplus3.3'
+    __version__ = '2.0.0hplus4'
     __name__ = 'deauthcounter'
     __license__ = 'MIT'
     __description__ = 'counts the successful deauth attacks of this session '
